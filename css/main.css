@@ -358,6 +358,172 @@ th {
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
-/*# sourceMappingURL=main.css.map */
+.mx-itself {
+  height: 55px;
+  width: 100%;
+  background-color: #ecf0f1;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+
+.mx-control-panel {
+  height: 55px;
+  background-color: #26ad5e;
+  padding: 10px 0; }
+
+.mx-icons-sprite,
+.mx-icon-recents,
+.mx-icon-keypad-white,
+.mx-icon-keypad-green,
+.mx-icon-contact-white,
+.mx-icon-contact-green,
+.mx-icon-itself-toggle,
+.mx-icon-itself-settings,
+.mx-icon-mic,
+.mx-icon-add-small,
+.mx-icon-phone-white-right-large,
+.mx-icon-phone-green-right-large,
+.mx-icon-phone-transparent-left-large,
+.mx-icon-phone-white-center-medium,
+.mx-icon-phone-white-down-small,
+.mx-icon-person-large,
+.mx-icon-person-small,
+.mx-icon-info-def-white,
+.mx-icon-info-def-yellow,
+.mx-icon-info-def-green,
+.mx-icon-info-italic,
+.mx-icon-search,
+.mx-icon-poi,
+.mx-icon-backspace,
+.mx-icon-close-red,
+.mx-icon-close-white {
+  background: url("../img/mx-icons-sprite.png");
+  cursor: pointer; }
+
+.mx-icon-recents {
+  background-position: -2px 0;
+  width: 27px;
+  height: 27px; }
+
+.mx-icon-keypad-white {
+  background-position: -1px -32px;
+  width: 26px;
+  height: 34px; }
+
+.mx-icon-keypad-green {
+  background-position: -35px -33px;
+  width: 26px;
+  height: 34px; }
+
+.mx-icon-contact-white {
+  background-position: -1px -70px;
+  width: 28px;
+  height: 18px; }
+
+.mx-icon-contact-green {
+  background-position: -35px -70px;
+  width: 28px;
+  height: 18px; }
+
+.mx-icon-itself-toggle {
+  background-position: 0 -93px;
+  width: 26px;
+  height: 21px; }
+
+.mx-icon-itself-settings {
+  background-position: -1px -123px;
+  width: 21px;
+  height: 20px; }
+
+.mx-icon-mic {
+  background-position: -2px -148px;
+  width: 12px;
+  height: 22px; }
+
+.mx-icon-add-small {
+  background-position: -1px -176px;
+  width: 14px;
+  height: 13px; }
+
+.mx-icon-phone-white-right-large {
+  background-position: 0 -199px;
+  width: 31px;
+  height: 30px; }
+
+.mx-icon-phone-green-right-large {
+  background-position: -32px -200px;
+  width: 31px;
+  height: 30px; }
+
+.mx-icon-phone-transparent-left-large {
+  background-position: -67px -200px;
+  width: 19px;
+  height: 31px; }
+
+.mx-icon-phone-white-center-medium {
+  background-position: -90px -205px;
+  width: 10px;
+  height: 25px; }
+
+.mx-icon-phone-white-down-small {
+  background-position: -102px -220px;
+  width: 25px;
+  height: 9px; }
+
+.mx-icon-person-large {
+  background-position: -1px -232px;
+  width: 46px;
+  height: 53px; }
+
+.mx-icon-person-small {
+  background-position: -53px -261px;
+  width: 20px;
+  height: 23px; }
+
+.mx-icon-info-def-white {
+  background-position: -1px -287px;
+  width: 27px;
+  height: 27px; }
+
+.mx-icon-info-def-yellow {
+  background-position: -32px -288px;
+  width: 27px;
+  height: 27px; }
+
+.mx-icon-info-def-green {
+  background-position: -63px -288px;
+  width: 27px;
+  height: 27px; }
+
+.mx-icon-info-italic {
+  background-position: -95px -294px;
+  width: 21px;
+  height: 21px; }
+
+.mx-icon-search {
+  background-position: 0 -320px;
+  width: 30px;
+  height: 24px; }
+
+.mx-icon-poi {
+  background-position: 0 -351px;
+  width: 28px;
+  height: 34px; }
+
+.mx-icon-backspace {
+  background-position: -2px -388px;
+  width: 34px;
+  height: 23px; }
+
+.mx-icon-close-red {
+  background-position: 0 -415px;
+  width: 16px;
+  height: 16px; }
+
+.mx-icon-close-white {
+  background-position: -18px -416px;
+  width: 16px;
+  height: 16px; }

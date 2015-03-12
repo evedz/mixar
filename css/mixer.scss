@@ -6,6 +6,8 @@
   bottom: 0;
   left: 0;
   font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  box-shadow: 0 -1px 4px 1px #e7e7e7;
   .row {
     margin-right: 0;
     margin-left: 0;
@@ -16,24 +18,104 @@
   }
 }
 
+.extension-mx-tab {
+  position: absolute;
+  width: 100%;
+  bottom: 100%;
+  left: 0;
+  background-color: #ecf0f1;
+  text-align: center;
+  padding: 3px;
+  border: 1px solid #fdfaed;
+  margin-bottom: 3px;
+  box-shadow: 0 -1px 4px 1px #e7e7e7;
+}
+
 .mx-control-panel {
   min-height: 55px;
   min-width: 235px;
   background-color: #26ad5e;
   padding: 10px 0;
   position: relative;
+  .mx-icon-contact-white {
+    margin-top: 11px;
+  }
+  .mx-icon-keypad-white {
+    margin-top: 5px;
+  }
+  .mx-icon-recents {
+    margin-top: 7px;
+  }
+}
+
+.mx-toggle-panel {
+  padding: 18px 18px 0 0;
+  .mx-icon-itself-settings {
+    padding-right: 25px;
+    margin-right: 7px;
+    border-right: 1px solid #bec3c7;
+  }
 }
 
 .mx-keypad-wrapper {
-  position: absolute;
-  width: 100%;
-  min-height: 400px;
-  bottom: 100%;
-  left: 0;
-  background-color: #ecf0f1;
+  @extend .extension-mx-tab;
+  .mx-keypad-figure {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    &:hover {
+      cursor: pointer;
+      background-color: #e8eced;
+    }
+    &:active {
+      box-shadow: inset 0 0 8px 0 #d6dbde;
+    }
+  }
+  span {
+    font-size: 32px;
+    line-height: 64px;
+    color: #34495e;
+  }
 }
 
-.mx-icons-sprite,
+.mx-keypad-area {
+  padding: 0 25px;
+  margin-bottom: 60px;
+}
+
+.mx-keypad-number {
+  border-bottom: 1px solid #c1c6ca;
+  margin-bottom: 3px;
+  padding-bottom: 15px;
+  span {
+    color: #535c69;
+    text-align:center;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+}
+
+.mx-keypad-phone {
+  @extend .extension-mx-tab; // TODO: FIX
+  min-height: 55px;
+  padding: 8px;
+}
+
+.mx-keypad-phone__call {
+  padding: 4px;
+}
+
+.mx-button {
+  border-radius: 21px;
+}
+
+.mx-button-green {
+  background-color: #26ad5e;
+}
+
 .mx-icon-recents,
 .mx-icon-keypad-white,
 .mx-icon-keypad-green,
@@ -61,6 +143,9 @@
 .mx-icon-close-white {
   background: url('../img/mx-icons-sprite.png');
   cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .mx-icon-recents {

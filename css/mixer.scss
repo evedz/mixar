@@ -82,7 +82,6 @@
 
 .mx-keypad-area {
   padding: 0 25px;
-  margin-bottom: 60px;
 }
 
 .mx-keypad-number {
@@ -99,17 +98,21 @@
 }
 
 .mx-keypad-phone {
-  @extend .extension-mx-tab; // TODO: FIX
+  //@extend .extension-mx-tab;
   min-height: 55px;
   padding: 8px;
 }
 
 .mx-keypad-phone__call {
   padding: 4px;
+  float: none;
 }
 
 .mx-button {
   border-radius: 21px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .mx-button-green {

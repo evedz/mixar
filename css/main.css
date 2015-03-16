@@ -373,7 +373,7 @@ th {
     padding-right: 0;
     padding-left: 0; }
 
-.extension-mx-tab, .mx-keypad-wrapper, .mx-keypad-phone {
+.extension-mx-tab, .mx-keypad-wrapper {
   position: absolute;
   width: 100%;
   bottom: 100%;
@@ -422,8 +422,7 @@ th {
   color: #34495e; }
 
 .mx-keypad-area {
-  padding: 0 25px;
-  margin-bottom: 60px; }
+  padding: 0 25px; }
 
 .mx-keypad-number {
   border-bottom: 1px solid #c1c6ca;
@@ -441,10 +440,13 @@ th {
   padding: 8px; }
 
 .mx-keypad-phone__call {
-  padding: 4px; }
+  padding: 4px;
+  float: none; }
 
 .mx-button {
   border-radius: 21px; }
+  .mx-button:hover {
+    cursor: pointer; }
 
 .mx-button-green {
   background-color: #26ad5e; }

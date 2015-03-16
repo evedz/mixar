@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<div style="min-height: 2000px; background-color: #fff"></div>
+<div style="min-height: 2000px; background-color: #fff">
 
 <div class="container-fluid mx-itself">
     <div class="row">
@@ -32,57 +32,63 @@
             <div class="mx-control-panel">
                 <div class="row">
                     <div class="col-md-4 col-xs-4">
-                        <div class="mx-icon-contact-white center-block"></div>
+                        <a class="mx-icon-contact-white center-block" data-toggle="tab" href="#mx-tab-contacts"></a>
                     </div>
                     <div class="col-md-4 col-xs-4">
-                        <div class="mx-icon-keypad-white center-block"></div>
+                        <a class="mx-icon-keypad-white center-block" data-toggle="tab" href="#mx-tab-keypad"></a>
                     </div>
                     <div class="col-md-4 col-xs-4">
-                        <div class="mx-icon-recents center-block"></div>
+                        <a class="mx-icon-recents center-block" data-toggle="tab" href="#mx-tab-recents"></a>
                     </div>
                 </div>
-                <div class="mx-keypad-wrapper">
-                    <div class="row">
-                        <div class="pull-right">
-                            <div class="mx-icon-close-red"></div>
-                        </div>
+                <div class="tab-content">
+                    <div class="mx-keypad-wrapper tab-pane" id="mx-tab-contacts">
+                        Контакты
                     </div>
-                    <div class="mx-keypad-area">
-                        <div class="row mx-keypad-number">
-                            <span class="js-keypad-number">+380935115151</span>
-                            <div class="pull-right mx-icon-backspace"></div>
-                        </div>
+                    <div class="mx-keypad-wrapper tab-pane" id="mx-tab-keypad">
                         <div class="row">
-                            <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>1</span></div>
-                            <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>2</span></div>
-                            <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>3</span></div>
+                            <div class="pull-right">
+                                <div class="mx-icon-close-red"></div>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>4</span></div>
-                            <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>5</span></div>
-                            <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>6</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>7</span></div>
-                            <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>8</span></div>
-                            <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>9</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>*</span></div>
-                            <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>0</span></div>
-                            <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>#</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-5 center-block">
-                        <div class="mx-keypad-phone">
-                            <div class="mx-button mx-button-green mx-keypad-phone__call">
-                                <div class="mx-icon-phone-white-right-large center-block"></div>
+                        <div class="mx-keypad-area">
+                            <div class="row mx-keypad-number">
+                                <span class="js-keypad-number">+380935115151</span>
+                                <div class="pull-right mx-icon-backspace"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>1</span></div>
+                                <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>2</span></div>
+                                <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>3</span></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>4</span></div>
+                                <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>5</span></div>
+                                <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>6</span></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>7</span></div>
+                                <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>8</span></div>
+                                <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>9</span></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>*</span></div>
+                                <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>0</span></div>
+                                <div class="col-md-4 col-xs-4 mx-keypad-figure"><span>#</span></div>
+                            </div>
+                            <div class="mx-keypad-phone">
+                                <div class="mx-button mx-button-green mx-keypad-phone__call col-md-6 center-block">
+                                    <div class="mx-icon-phone-white-right-large center-block"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="mx-keypad-wrapper tab-pane" id="mx-tab-recents">
+                        Недавние
+                    </div>
                 </div>
+
+
             </div>
         </div>
     </div>
@@ -92,6 +98,7 @@
 
 
 <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="http://builds.emberjs.com/release/ember.prod.js"></script>
 <script src="js/mixer.js"></script>
 

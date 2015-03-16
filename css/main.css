@@ -373,7 +373,7 @@ th {
     padding-right: 0;
     padding-left: 0; }
 
-.extension-mx-tab, .mx-keypad-wrapper {
+.extension-mx-tab, .mx-keypad-wrapper, .mx-contacts-wrapper {
   position: absolute;
   width: 100%;
   bottom: 100%;
@@ -389,13 +389,24 @@ th {
   min-height: 55px;
   min-width: 235px;
   background-color: #26ad5e;
-  padding: 10px 0;
+  padding: 10px 23px;
   position: relative; }
-  .mx-control-panel .mx-icon-contact-white {
+
+.mx-control-panel-items {
+  padding: 0; }
+  .mx-control-panel-items li {
+    list-style-type: none; }
+  .mx-control-panel-items .active .mx-icon-contact-white {
+    background-position: -35px -70px; }
+  .mx-control-panel-items .active .mx-icon-keypad-white {
+    background-position: -35px -33px; }
+  .mx-control-panel-items .active .mx-icon-recents {
+    background-position: -35px 0; }
+  .mx-control-panel-items .mx-icon-contact-white {
     margin-top: 11px; }
-  .mx-control-panel .mx-icon-keypad-white {
+  .mx-control-panel-items .mx-icon-keypad-white {
     margin-top: 5px; }
-  .mx-control-panel .mx-icon-recents {
+  .mx-control-panel-items .mx-icon-recents {
     margin-top: 7px; }
 
 .mx-toggle-panel {
@@ -404,6 +415,10 @@ th {
     padding-right: 25px;
     margin-right: 7px;
     border-right: 1px solid #bec3c7; }
+
+.mx-text-tab-header {
+  font-size: 18px;
+  color: #fff; }
 
 .mx-keypad-wrapper .mx-keypad-figure {
   -moz-user-select: none;
@@ -442,6 +457,9 @@ th {
 .mx-keypad-phone__call {
   padding: 4px;
   float: none; }
+
+.mx-contacts-header {
+  background-color: #2b84ba; }
 
 .mx-button {
   border-radius: 21px; }

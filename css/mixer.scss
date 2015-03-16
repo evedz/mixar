@@ -35,8 +35,26 @@
   min-height: 55px;
   min-width: 235px;
   background-color: #26ad5e;
-  padding: 10px 0;
+  padding: 10px 23px;
   position: relative;
+}
+
+.mx-control-panel-items {
+  padding: 0;
+  li {
+    list-style-type: none;
+  }
+  .active {
+    .mx-icon-contact-white {
+      background-position: -35px -70px;
+    }
+    .mx-icon-keypad-white {
+      background-position: -35px -33px;
+    }
+    .mx-icon-recents {
+      background-position: -35px 0;
+    }
+  }
   .mx-icon-contact-white {
     margin-top: 11px;
   }
@@ -56,6 +74,13 @@
     border-right: 1px solid #bec3c7;
   }
 }
+
+.mx-text-tab-header {
+  font-size: 18px;
+  color: #fff;
+}
+
+// KEYPAD
 
 .mx-keypad-wrapper {
   @extend .extension-mx-tab;
@@ -107,6 +132,19 @@
   padding: 4px;
   float: none;
 }
+
+// CONTACTS
+
+.mx-contacts-wrapper {
+  @extend .extension-mx-tab;
+}
+
+.mx-contacts-header {
+  background-color: #2b84ba;
+
+}
+
+// BUTTONS
 
 .mx-button {
   border-radius: 21px;

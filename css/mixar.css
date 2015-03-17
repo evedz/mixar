@@ -123,8 +123,11 @@
 
 .mx-recents-name {
   padding-top: 5px;
-  font-size: 14px;
-  color: #161719; }
+  font-size: 15px;
+  color: #161719;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .mx-recents-number {
   padding-top: 5px;

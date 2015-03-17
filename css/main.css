@@ -373,20 +373,19 @@ th {
     padding-right: 0;
     padding-left: 0; }
 
-.extension-mx-tab, .mx-keypad-wrapper, .mx-contacts-wrapper {
+.extension-mx-tab, .mx-keypad-wrapper, .mx-contacts-wrapper, .mx-recents-wrapper {
   position: absolute;
   width: 100%;
   bottom: 100%;
   left: 0;
   background-color: #ecf0f1;
-  text-align: center;
   padding: 3px;
-  border: 1px solid #fdfaed;
   margin-bottom: 3px;
+  border: 1px solid #fdfaed;
   box-shadow: 0 -1px 4px 1px #e7e7e7; }
 
 .mx-control-panel {
-  min-height: 55px;
+  height: 55px;
   min-width: 235px;
   background-color: #26ad5e;
   padding: 10px 23px;
@@ -437,18 +436,21 @@ th {
   color: #34495e; }
 
 .mx-keypad-area {
-  padding: 0 25px; }
+  padding: 0 18px;
+  text-align: center; }
 
 .mx-keypad-number {
   border-bottom: 1px solid #c1c6ca;
   margin-bottom: 3px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  text-align: center; }
   .mx-keypad-number span {
+    font-family: 'Oswald', 'Roboto', sans-serif;
     color: #535c69;
+    letter-spacing: 2px;
     text-align: center;
     font-size: 22px;
-    line-height: 26px;
-    font-weight: bold; }
+    line-height: 26px; }
 
 .mx-keypad-phone {
   min-height: 55px;
@@ -460,6 +462,19 @@ th {
 
 .mx-contacts-header {
   background-color: #2b84ba; }
+
+.mx-recents-item {
+  padding: 4px 6px; }
+
+.mx-recents-avatar {
+  background-color: #7e8c8d;
+  padding: 16px;
+  width: 80%; }
+
+.mx-icon-close-red__top-right {
+  position: absolute;
+  top: 4px;
+  right: 4px; }
 
 .mx-button {
   border-radius: 21px; }

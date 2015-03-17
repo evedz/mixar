@@ -24,15 +24,14 @@
   bottom: 100%;
   left: 0;
   background-color: #ecf0f1;
-  text-align: center;
   padding: 3px;
-  border: 1px solid #fdfaed;
   margin-bottom: 3px;
+  border: 1px solid #fdfaed;
   box-shadow: 0 -1px 4px 1px #e7e7e7;
 }
 
 .mx-control-panel {
-  min-height: 55px;
+  height: 55px;
   min-width: 235px;
   background-color: #26ad5e;
   padding: 10px 23px;
@@ -106,24 +105,26 @@
 }
 
 .mx-keypad-area {
-  padding: 0 25px;
+  padding: 0 18px;
+  text-align: center;
 }
 
 .mx-keypad-number {
   border-bottom: 1px solid #c1c6ca;
   margin-bottom: 3px;
   padding-bottom: 15px;
+  text-align: center;
   span {
+    font-family: 'Oswald', 'Roboto', sans-serif;
     color: #535c69;
-    text-align:center;
+    letter-spacing: 2px;
+    text-align: center;
     font-size: 22px;
     line-height: 26px;
-    font-weight: bold;
   }
 }
 
 .mx-keypad-phone {
-  //@extend .extension-mx-tab;
   min-height: 55px;
   padding: 8px;
 }
@@ -144,6 +145,28 @@
 
 }
 
+// RECENTS
+
+.mx-recents-wrapper {
+  @extend .extension-mx-tab;
+}
+
+.mx-recents-item {
+  padding: 4px 6px;
+}
+
+.mx-recents-avatar {
+  background-color: #7e8c8d;
+  padding: 16px;
+  width: 80%;
+}
+
+.mx-icon-close-red__top-right {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
 // BUTTONS
 
 .mx-button {
@@ -156,6 +179,8 @@
 .mx-button-green {
   background-color: #26ad5e;
 }
+
+// ICONS SPRITE
 
 .mx-icon-recents,
 .mx-icon-keypad-white,

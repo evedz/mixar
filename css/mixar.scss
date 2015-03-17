@@ -73,9 +73,81 @@
   }
 }
 
-.mx-text-tab-header {
+// CONTACTS
+
+.mx-contacts-wrapper {
+  @extend .extension-mx-tab;
+  width: 200%;
+}
+
+.mx-contacts-header {
+  background-color: #2b84ba;
+  padding: 0 0 10px 12px;
+}
+
+.mx-contacts-text-tab-header {
   font-size: 18px;
   color: #fff;
+  line-height: 20px;
+  margin-left: 10px;
+  float: left;
+}
+
+.mx-contacts-search-wrapper {
+  background-color: #e8edf0;
+  padding: 12px;
+}
+
+.mx-search-form {
+  border-radius: 21px;
+  border: 1px solid #bec3c7;
+  text-indent: 21px;
+  color: #bec3c7;
+  font-size: 18px;
+  padding: 5px 40px 5px 5px !important;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  float: left;
+}
+
+.mx-icon-search__contacts {
+  float: left;
+  position: relative;
+  z-index: 2;
+  margin-left: -40px;
+  margin-top: 6px;
+}
+
+.mx-contacts-item {
+  padding: 4px 6px;
+  border: 1px solid transparent;
+  position: relative;
+  &:hover {
+    border: 1px solid #7e8c8d;
+  }
+}
+
+.mx-contacts-avatar {
+  background-color: #7e8c8d;
+  padding: 16px;
+  width: 80%;
+}
+
+.mx-contacts-name {
+  padding-top: 5px;
+  font-size: 15px;
+  color: #161719;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mx-contacts-number {
+  padding-top: 5px;
+  font-size: 14px;
+  font-family: 'Oswald', 'Roboto', sans-serif;
+  color: #e94c3d;
 }
 
 // KEYPAD
@@ -132,18 +204,6 @@
 .mx-keypad-phone__call {
   padding: 4px;
   float: none;
-}
-
-// CONTACTS
-
-.mx-contacts-wrapper {
-  @extend .extension-mx-tab;
-  padding: 3px;
-}
-
-.mx-contacts-header {
-  background-color: #2b84ba;
-
 }
 
 // RECENTS

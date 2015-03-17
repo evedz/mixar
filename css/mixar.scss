@@ -24,7 +24,6 @@
   bottom: 100%;
   left: 0;
   background-color: #ecf0f1;
-  padding: 3px;
   margin-bottom: 3px;
   border: 1px solid #fdfaed;
   box-shadow: 0 -1px 4px 1px #e7e7e7;
@@ -83,6 +82,7 @@
 
 .mx-keypad-wrapper {
   @extend .extension-mx-tab;
+  padding: 3px;
   .mx-keypad-figure {
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -120,7 +120,7 @@
     letter-spacing: 2px;
     text-align: center;
     font-size: 22px;
-    line-height: 26px;
+    line-height: 22px;
   }
 }
 
@@ -138,6 +138,7 @@
 
 .mx-contacts-wrapper {
   @extend .extension-mx-tab;
+  padding: 3px;
 }
 
 .mx-contacts-header {
@@ -153,6 +154,11 @@
 
 .mx-recents-item {
   padding: 4px 6px;
+  border: 1px solid transparent;
+  position: relative;
+  &:hover {
+    border: 1px solid #7e8c8d;
+  }
 }
 
 .mx-recents-avatar {
@@ -161,10 +167,23 @@
   width: 80%;
 }
 
+.mx-recents-name {
+  padding-top: 5px;
+  font-size: 14px;
+  color: #161719;
+}
+
+.mx-recents-number {
+  padding-top: 5px;
+  font-size: 14px;
+  font-family: 'Oswald', 'Roboto', sans-serif;
+  color: #e94c3d;
+}
+
 .mx-icon-close-red__top-right {
   position: absolute;
-  top: 4px;
-  right: 4px;
+  top: 0;
+  right: 0;
 }
 
 // BUTTONS

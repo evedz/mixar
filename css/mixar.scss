@@ -1,13 +1,33 @@
+// COLORS
+$mx-color_athens_gray: #ecf0f1;
+$mx-color_mercury: #e7e7e7;
+$mx-color_orange_white: #fdfaed;
+$mx-color_chateau_green: #26ad5e;
+$mx-color_silver_sand: #bec3c7;
+$mx-color_boston_blue: #2b84ba;
+$mx-color_mystic: #e8edf0;
+$mx-color_alto: #d6dcdd;
+$mx-color_oslo_gray: #7e8c8d;
+$mx-color_vulcan: #161719;
+$mx-color_cinnabar: #e94c3d;
+$mx-color_loblolly: #c3c8cc;
+$mx-color_tuscany: #b36530;
+$mx-color_scarpa_flow: #535c69;
+$mx-color_mountain_mist: #8f9396;
+$mx-color_pickled_bluewood: #34495e;
+$mx-color_tiara: #c7cbcd;
+$mx-white: #fff;
+
 .mx-itself {
   height: 55px;
   width: 100%;
-  background-color: #ecf0f1;
+  background-color: $mx-color_athens_gray;
   position: fixed;
   bottom: 0;
   left: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  box-shadow: 0 -1px 4px 1px #e7e7e7;
+  box-shadow: 0 -1px 4px 1px $mx-color_mercury;
   .row {
     margin-right: 0;
     margin-left: 0;
@@ -23,16 +43,16 @@
   width: 100%;
   bottom: 100%;
   left: 0;
-  background-color: #ecf0f1;
+  background-color: $mx-color_athens_gray;
   margin-bottom: 3px;
-  border: 1px solid #fdfaed;
-  box-shadow: 0 -1px 4px 1px #e7e7e7;
+  border: 1px solid $mx-color_orange_white;
+  box-shadow: 0 -1px 4px 1px $mx-color_mercury;
 }
 
 .mx-control-panel {
   height: 55px;
   min-width: 235px;
-  background-color: #26ad5e;
+  background-color: $mx-color_chateau_green;
   padding: 10px 23px;
   position: relative;
 }
@@ -69,7 +89,7 @@
   .mx-icon-itself-settings {
     padding-right: 25px;
     margin-right: 7px;
-    border-right: 1px solid #bec3c7;
+    border-right: 1px solid $mx-color_silver_sand;
   }
 }
 
@@ -81,13 +101,13 @@
 }
 
 .mx-contacts-header {
-  background-color: #2b84ba;
+  background-color: $mx-color_boston_blue;
   padding: 15px;
 }
 
 .mx-contacts-text-tab-header {
   font-size: 18px;
-  color: #fff;
+  color: $mx-white;
   line-height: 20px;
   margin-left: 10px;
   float: left;
@@ -100,15 +120,15 @@
 }
 
 .mx-contacts-search-wrapper {
-  background-color: #e8edf0;
+  background-color: $mx-color_mystic;
   padding: 12px;
 }
 
 .mx-search-form {
   border-radius: 21px;
-  border: 1px solid #bec3c7;
+  border: 1px solid $mx-color_silver_sand;
   text-indent: 21px;
-  color: #bec3c7;
+  color: $mx-color_silver_sand;
   font-size: 18px;
   padding: 5px 40px 5px 5px !important;
   outline: none;
@@ -133,12 +153,12 @@
 .mx-contacts-item {
   padding: 4px 6px 4px 6px;
   margin-bottom: 8px;
-  border-bottom: 1px solid #d6dcdd;
+  border-bottom: 1px solid $mx-color_alto;
   position: relative;
 }
 
 .mx-contacts-avatar {
-  background-color: #7e8c8d;
+  background-color: $mx-color_oslo_gray;
   padding: 23px;
   width: 70px;
   height: 70px;
@@ -147,7 +167,7 @@
 .mx-contacts-name {
   padding-top: 5px;
   font-size: 15px;
-  color: #161719;
+  color: $mx-color_vulcan;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -157,19 +177,19 @@
   padding-top: 5px;
   font-size: 14px;
   font-family: 'Oswald', 'Roboto', sans-serif;
-  color: #e94c3d;
+  color: $mx-color_cinnabar;
 }
 
 .mx-contacts-company-info {
-  border-left: 1px solid #c3c8cc;
+  border-left: 1px solid $mx-color_loblolly;
   margin-left: 5px;
   padding-left: 5px;
 }
 
 .mx-contacts-company-group {
-  border-bottom: 1px solid #d6dcdd;
+  border-bottom: 1px solid $mx-color_alto;
   padding-bottom: 7px;
-  color: #b36530;
+  color: $mx-color_tuscany;
   text-align: right;
   font-size: 14px;
 }
@@ -180,12 +200,12 @@
 
 .mx-contacts-company-name {
   font-size: 12px;
-  color: #535c69;
+  color: $mx-color_scarpa_flow;
 }
 
 .mx-contacts-company-brand-name {
   font-size: 12px;
-  color: #8f9396;
+  color: $mx-color_mountain_mist;
 }
 
 // KEYPAD
@@ -210,7 +230,7 @@
   span {
     font-size: 32px;
     line-height: 64px;
-    color: #34495e;
+    color: $mx-color_pickled_bluewood;
   }
 }
 
@@ -226,7 +246,7 @@
   text-align: center;
   span {
     font-family: 'Oswald', 'Roboto', sans-serif;
-    color: #535c69;
+    color: $mx-color_scarpa_flow;
     letter-spacing: 2px;
     text-align: center;
     font-size: 22px;
@@ -255,12 +275,12 @@
   border: 1px solid transparent;
   position: relative;
   &:hover {
-    border: 1px solid #7e8c8d;
+    border: 1px solid $mx-color_oslo_gray;
   }
 }
 
 .mx-recents-avatar {
-  background-color: #7e8c8d;
+  background-color: $mx-color_oslo_gray;
   padding: 16px;
   width: 80%;
 }
@@ -268,7 +288,7 @@
 .mx-recents-name {
   padding-top: 5px;
   font-size: 15px;
-  color: #161719;
+  color: $mx-color_vulcan;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -278,7 +298,7 @@
   padding-top: 5px;
   font-size: 14px;
   font-family: 'Oswald', 'Roboto', sans-serif;
-  color: #e94c3d;
+  color: $mx-color_cinnabar;
 }
 
 .mx-icon-close-red__top-right {
@@ -294,14 +314,14 @@
 }
 
 .mx-incoming-call-header {
-  background-color: #26ad5e;
+  background-color: $mx-color_chateau_green;
   padding: 15px;
 }
 
 .mx-incoming-call-text-tab-header {
   font-size: 20px;
   line-height: 20px;
-  color: #fff;
+  color: $mx-white;
   margin-left: 10px;
   text-align: center;
 }
@@ -317,7 +337,7 @@
 }
 
 .mx-incoming-call-avatar {
-  background-color: #34495e;
+  background-color: $mx-color_pickled_bluewood;
   padding: 23px;
   margin-bottom: 15px;
   width: 95px;
@@ -325,24 +345,24 @@
 }
 
 .mx-incoming-call-phone-number {
-  color: #161719;
+  color: $mx-color_vulcan;
   font-size: 20px;
   text-align: center;
-  border-bottom: 1px solid #bec3c7;
+  border-bottom: 1px solid $mx-color_silver_sand;
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
 
 .mx-incoming-call-from {
   text-align: center;
-  color: #8f9396;
+  color: $mx-color_mountain_mist;
   font-size: 12px;
   margin-bottom: 10px;
 }
 
 .mx-incoming-call-meta-info {
   text-align: center;
-  color: #34495e;
+  color: $mx-color_pickled_bluewood;
   font-size: 12px;
   margin-bottom: 15px;
 }
@@ -383,7 +403,7 @@
 }
 
 .mx-incoming-call-button-capture {
-  color: #fff;
+  color: $mx-white;
   font-size: 12px;
   text-align: center;
 }
@@ -399,11 +419,11 @@
 
 .mx-button-transparent {
   background-color: transparent;
-  border: 1px solid #c7cbcd;
+  border: 1px solid $mx-color_tiara;
 }
 
 .mx-button-green {
-  background-color: #26ad5e;
+  background-color: $mx-color_chateau_green;
 }
 
 .mx-button-blue-light {
@@ -411,11 +431,11 @@
 }
 
 .mx-button-blue-dark {
-  background-color: #34495e;
+  background-color: $mx-color_pickled_bluewood;
 }
 
 .mx-button-red {
-  background-color: #e94c3d;
+  background-color: $mx-color_cinnabar;
 }
 
 // ICONS SPRITE

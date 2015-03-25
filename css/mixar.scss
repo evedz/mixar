@@ -307,6 +307,18 @@ $mx-white: #fff;
   right: 0;
 }
 
+.mx-icon-poi__recents {
+  display: block;
+  position: absolute;
+  top: -11px;
+  right: -17px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 31px;
+  color: $mx-white;
+  font-family: 'Oswald', 'Roboto', sans-serif;
+}
+
 // INCOMING CALL
 
 .mx-incoming-call-wrapper {

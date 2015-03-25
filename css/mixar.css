@@ -15,7 +15,7 @@
     padding-right: 0;
     padding-left: 0; }
 
-.extension-mx-tab, .mx-contacts-wrapper, .mx-keypad-wrapper, .mx-recents-wrapper {
+.extension-mx-tab, .mx-contacts-wrapper, .mx-keypad-wrapper, .mx-recents-wrapper, .mx-incoming-call-wrapper {
   position: absolute;
   width: 100%;
   bottom: 100%;
@@ -61,7 +61,7 @@
 
 .mx-contacts-header {
   background-color: #2b84ba;
-  padding: 0 0 10px 12px; }
+  padding: 15px; }
 
 .mx-contacts-text-tab-header {
   font-size: 18px;
@@ -69,6 +69,11 @@
   line-height: 20px;
   margin-left: 10px;
   float: left; }
+
+.mx-contacts-icon-close {
+  position: absolute;
+  top: 4px;
+  right: 4px; }
 
 .mx-contacts-search-wrapper {
   background-color: #e8edf0;
@@ -93,17 +98,21 @@
   margin-left: -40px;
   margin-top: 6px; }
 
+.mx-contacts-item-wrapper {
+  height: 370px;
+  overflow-y: scroll; }
+
 .mx-contacts-item {
-  padding: 4px 6px;
-  border: 1px solid transparent;
+  padding: 4px 6px 4px 6px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #d6dcdd;
   position: relative; }
-  .mx-contacts-item:hover {
-    border: 1px solid #7e8c8d; }
 
 .mx-contacts-avatar {
   background-color: #7e8c8d;
-  padding: 16px;
-  width: 80%; }
+  padding: 23px;
+  width: 70px;
+  height: 70px; }
 
 .mx-contacts-name {
   padding-top: 5px;
@@ -118,6 +127,29 @@
   font-size: 14px;
   font-family: 'Oswald', 'Roboto', sans-serif;
   color: #e94c3d; }
+
+.mx-contacts-company-info {
+  border-left: 1px solid #c3c8cc;
+  margin-left: 5px;
+  padding-left: 5px; }
+
+.mx-contacts-company-group {
+  border-bottom: 1px solid #d6dcdd;
+  padding-bottom: 7px;
+  color: #b36530;
+  text-align: right;
+  font-size: 14px; }
+
+.mx-contacts-company-item {
+  padding-top: 15px; }
+
+.mx-contacts-company-name {
+  font-size: 12px;
+  color: #535c69; }
+
+.mx-contacts-company-brand-name {
+  font-size: 12px;
+  color: #8f9396; }
 
 .mx-keypad-wrapper {
   padding: 3px; }
@@ -193,13 +225,105 @@
   top: 0;
   right: 0; }
 
+.mx-incoming-call-header {
+  background-color: #26ad5e;
+  padding: 15px; }
+
+.mx-incoming-call-text-tab-header {
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+  margin-left: 10px;
+  text-align: center; }
+
+.mx-incoming-call-icon-close {
+  position: absolute;
+  top: 4px;
+  right: 4px; }
+
+.mx-incoming-call-avatar-wrapper {
+  padding-top: 15px; }
+
+.mx-incoming-call-avatar {
+  background-color: #34495e;
+  padding: 23px;
+  margin-bottom: 15px;
+  width: 95px;
+  height: 95px; }
+
+.mx-incoming-call-phone-number {
+  color: #161719;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #bec3c7;
+  padding-bottom: 5px;
+  margin-bottom: 10px; }
+
+.mx-incoming-call-from {
+  text-align: center;
+  color: #8f9396;
+  font-size: 12px;
+  margin-bottom: 10px; }
+
+.mx-incoming-call-meta-info {
+  text-align: center;
+  color: #34495e;
+  font-size: 12px;
+  margin-bottom: 15px; }
+
+.mx-incoming-call-func-buttons-wrapper {
+  margin-bottom: 15px; }
+  .mx-incoming-call-func-buttons-wrapper .mx-button {
+    width: 92%;
+    min-height: 32px;
+    padding-top: 9px;
+    margin: 0 auto;
+    position: relative; }
+  .mx-incoming-call-func-buttons-wrapper .mx-icon-add-small {
+    position: absolute;
+    top: 1px;
+    left: 6px; }
+  .mx-incoming-call-func-buttons-wrapper .mx-icon-phone-white-down-small {
+    margin-top: 3px; }
+  .mx-incoming-call-func-buttons-wrapper .mx-icon-phone-white-center-medium {
+    position: absolute;
+    top: -5px;
+    left: 10px; }
+
+.mx-incoming-call-info-buttons-wrapper {
+  margin-bottom: 15px; }
+  .mx-incoming-call-info-buttons-wrapper .mx-button {
+    width: 92%;
+    min-height: 32px;
+    padding-top: 5px;
+    margin: 0 auto;
+    position: relative; }
+
+.mx-incoming-call-button-capture {
+  color: #fff;
+  font-size: 12px;
+  text-align: center; }
+
 .mx-button {
   border-radius: 21px; }
   .mx-button:hover {
     cursor: pointer; }
 
+.mx-button-transparent {
+  background-color: transparent;
+  border: 1px solid #c7cbcd; }
+
 .mx-button-green {
   background-color: #26ad5e; }
+
+.mx-button-blue-light {
+  background-color: #2881b9; }
+
+.mx-button-blue-dark {
+  background-color: #34495e; }
+
+.mx-button-red {
+  background-color: #e94c3d; }
 
 .mx-icon-recents,
 .mx-icon-keypad-white,

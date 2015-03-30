@@ -1,4 +1,5 @@
 .mx-itself {
+  padding: 0 15px;
   height: 55px;
   width: 100%;
   background-color: #ecf0f1;
@@ -7,7 +8,69 @@
   left: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  box-shadow: 0 -1px 4px 1px #e7e7e7; }
+  box-shadow: 0 -1px 4px 1px #e7e7e7;
+  box-sizing: border-box; }
+  .mx-itself div {
+    box-sizing: border-box; }
+  .mx-itself a, .mx-itself li {
+    outline: none; }
+  .mx-itself .container-fluid {
+    margin-right: auto;
+    margin-left: auto; }
+  .mx-itself .col-xs-1, .mx-itself .col-xs-2, .mx-itself .col-xs-3, .mx-itself .col-xs-4, .mx-itself .col-xs-5, .mx-itself .col-xs-6, .mx-itself .col-xs-7, .mx-itself .col-xs-8, .mx-itself .col-xs-9, .mx-itself .col-xs-10, .mx-itself .col-xs-11, .mx-itself .col-xs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .mx-itself .col-xs-1, .mx-itself .col-xs-2, .mx-itself .col-xs-3, .mx-itself .col-xs-4, .mx-itself .col-xs-5, .mx-itself .col-xs-6, .mx-itself .col-xs-7, .mx-itself .col-xs-8, .mx-itself .col-xs-9, .mx-itself .col-xs-10, .mx-itself .col-xs-11, .mx-itself .col-xs-12 {
+    float: left; }
+  .mx-itself .col-xs-12 {
+    width: 100%; }
+  .mx-itself .col-xs-11 {
+    width: 91.66666667%; }
+  .mx-itself .col-xs-10 {
+    width: 83.33333333%; }
+  .mx-itself .col-xs-9 {
+    width: 75%; }
+  .mx-itself .col-xs-8 {
+    width: 66.66666667%; }
+  .mx-itself .col-xs-7 {
+    width: 58.33333333%; }
+  .mx-itself .col-xs-6 {
+    width: 50%; }
+  .mx-itself .col-xs-5 {
+    width: 41.66666667%; }
+  .mx-itself .col-xs-4 {
+    width: 33.33333333%; }
+  .mx-itself .col-xs-3 {
+    width: 25%; }
+  .mx-itself .col-xs-2 {
+    width: 16.66666667%; }
+  .mx-itself .col-xs-1 {
+    width: 8.33333333%; }
+  .mx-itself .container {
+    margin-right: auto;
+    margin-left: auto; }
+  .mx-itself .row:before,
+  .mx-itself .row:after {
+    display: table;
+    content: " "; }
+  .mx-itself .row:after {
+    clear: both; }
+  .mx-itself .center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto; }
+  .mx-itself .pull-right {
+    float: right !important; }
+  .mx-itself .pull-left {
+    float: left !important; }
+  .mx-itself .text-left {
+    text-align: left; }
+  .mx-itself .text-right {
+    text-align: right; }
+  .mx-itself .text-center {
+    text-align: center; }
   .mx-itself .row {
     margin-right: 0;
     margin-left: 0; }
@@ -20,6 +83,7 @@
   width: 100%;
   bottom: 100%;
   left: 0;
+  display: none;
   background-color: #ecf0f1;
   margin-bottom: 3px;
   border: 1px solid #fdfaed;
@@ -33,7 +97,8 @@
   position: relative; }
 
 .mx-control-panel-items {
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
   .mx-control-panel-items li {
     list-style-type: none; }
   .mx-control-panel-items .active .mx-icon-contact-white {
@@ -52,7 +117,7 @@
 .mx-toggle-panel {
   padding: 18px 18px 0 0; }
   .mx-toggle-panel .mx-icon-itself-settings {
-    padding-right: 25px;
+    padding-right: 26px;
     margin-right: 7px;
     border-right: 1px solid #bec3c7; }
 
@@ -96,7 +161,7 @@
   position: relative;
   z-index: 2;
   margin-left: -40px;
-  margin-top: 6px; }
+  margin-top: 4px; }
 
 .mx-contacts-item-wrapper {
   height: 370px;
@@ -112,7 +177,8 @@
   background-color: #7e8c8d;
   padding: 23px;
   width: 70px;
-  height: 70px; }
+  height: 70px;
+  box-sizing: border-box; }
 
 .mx-contacts-name {
   padding-top: 5px;
@@ -188,7 +254,9 @@
 
 .mx-keypad-phone {
   min-height: 55px;
-  padding: 8px; }
+  padding: 8px;
+  width: 120px;
+  margin: 0 auto; }
 
 .mx-keypad-phone__call {
   padding: 4px;
@@ -204,7 +272,8 @@
 .mx-recents-avatar {
   background-color: #7e8c8d;
   padding: 16px;
-  width: 80%; }
+  width: 80%;
+  box-sizing: border-box; }
 
 .mx-recents-name {
   padding-top: 5px;
@@ -260,7 +329,8 @@
   padding: 23px;
   margin-bottom: 15px;
   width: 95px;
-  height: 95px; }
+  height: 95px;
+  box-sizing: border-box; }
 
 .mx-incoming-call-phone-number {
   color: #161719;

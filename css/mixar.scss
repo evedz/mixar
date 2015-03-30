@@ -19,6 +19,94 @@ $mx-color_tiara: #c7cbcd;
 $mx-white: #fff;
 
 .mx-itself {
+  padding: 0 15px;
+  div {
+    box-sizing: border-box;
+  }
+  a, li{
+    outline: none;
+  }
+  .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    float: left;
+  }
+  .col-xs-12 {
+    width: 100%;
+  }
+  .col-xs-11 {
+    width: 91.66666667%;
+  }
+  .col-xs-10 {
+    width: 83.33333333%;
+  }
+  .col-xs-9 {
+    width: 75%;
+  }
+  .col-xs-8 {
+    width: 66.66666667%;
+  }
+  .col-xs-7 {
+    width: 58.33333333%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-5 {
+    width: 41.66666667%;
+  }
+  .col-xs-4 {
+    width: 33.33333333%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-2 {
+    width: 16.66666667%;
+  }
+  .col-xs-1 {
+    width: 8.33333333%;
+  }
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .row:before,
+  .row:after {
+    display: table;
+    content: " ";
+  }
+  .row:after {
+    clear: both;
+  }
+  .center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .pull-right {
+    float: right !important;
+  }
+  .pull-left {
+    float: left !important;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .text-center {
+    text-align: center;
+  }
   height: 55px;
   width: 100%;
   background-color: $mx-color_athens_gray;
@@ -28,6 +116,7 @@ $mx-white: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   box-shadow: 0 -1px 4px 1px $mx-color_mercury;
+  box-sizing: border-box;
   .row {
     margin-right: 0;
     margin-left: 0;
@@ -38,16 +127,20 @@ $mx-white: #fff;
   }
 }
 
+// EXTENSIONS
 .extension-mx-tab {
   position: absolute;
   width: 100%;
   bottom: 100%;
   left: 0;
+  display: none;
   background-color: $mx-color_athens_gray;
   margin-bottom: 3px;
   border: 1px solid $mx-color_orange_white;
   box-shadow: 0 -1px 4px 1px $mx-color_mercury;
 }
+
+// PANEL
 
 .mx-control-panel {
   height: 55px;
@@ -59,6 +152,7 @@ $mx-white: #fff;
 
 .mx-control-panel-items {
   padding: 0;
+  margin: 0;
   li {
     list-style-type: none;
   }
@@ -87,7 +181,7 @@ $mx-white: #fff;
 .mx-toggle-panel {
   padding: 18px 18px 0 0;
   .mx-icon-itself-settings {
-    padding-right: 25px;
+    padding-right: 26px;
     margin-right: 7px;
     border-right: 1px solid $mx-color_silver_sand;
   }
@@ -142,7 +236,7 @@ $mx-white: #fff;
   position: relative;
   z-index: 2;
   margin-left: -40px;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 .mx-contacts-item-wrapper {
@@ -162,6 +256,7 @@ $mx-white: #fff;
   padding: 23px;
   width: 70px;
   height: 70px;
+  box-sizing: border-box;
 }
 
 .mx-contacts-name {
@@ -257,6 +352,8 @@ $mx-white: #fff;
 .mx-keypad-phone {
   min-height: 55px;
   padding: 8px;
+  width: 120px;
+  margin: 0 auto;
 }
 
 .mx-keypad-phone__call {
@@ -283,6 +380,7 @@ $mx-white: #fff;
   background-color: $mx-color_oslo_gray;
   padding: 16px;
   width: 80%;
+  box-sizing: border-box;
 }
 
 .mx-recents-name {
@@ -354,6 +452,7 @@ $mx-white: #fff;
   margin-bottom: 15px;
   width: 95px;
   height: 95px;
+  box-sizing: border-box;
 }
 
 .mx-incoming-call-phone-number {
@@ -387,6 +486,7 @@ $mx-white: #fff;
     padding-top: 9px;
     margin: 0 auto;
     position: relative;
+
   }
   .mx-icon-add-small {
     position: absolute;

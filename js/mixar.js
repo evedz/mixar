@@ -3,11 +3,9 @@
 
     "use strict";
 
-    $(".js-closeTab").click(function () {
-        $(this).parents('.tab-pane.active').removeClass('active');
-
+    $("#js-mx-control-panel").tabs({
+        collapsible: true,
+        active: false
     });
-    $(".mx-control-panel-items [data-toggle='tab']").click(function(){
 
-    });
 })(jQuery);

@@ -14,69 +14,52 @@
     box-sizing: border-box; }
   .mx-itself a, .mx-itself li {
     outline: none; }
-  .mx-itself .container-fluid {
-    margin-right: auto;
-    margin-left: auto; }
-  .mx-itself .col-xs-1, .mx-itself .col-xs-2, .mx-itself .col-xs-3, .mx-itself .col-xs-4, .mx-itself .col-xs-5, .mx-itself .col-xs-6, .mx-itself .col-xs-7, .mx-itself .col-xs-8, .mx-itself .col-xs-9, .mx-itself .col-xs-10, .mx-itself .col-xs-11, .mx-itself .col-xs-12 {
+  .mx-itself .mx-col-xs-1, .mx-itself .mx-col-xs-2, .mx-itself .mx-col-xs-3, .mx-itself .mx-col-xs-4, .mx-itself .mx-col-xs-5, .mx-itself .mx-col-xs-6, .mx-itself .mx-col-xs-7, .mx-itself .mx-col-xs-8, .mx-itself .mx-col-xs-9, .mx-itself .mx-col-xs-10, .mx-itself .mx-col-xs-11, .mx-itself .mx-col-xs-12 {
     position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px; }
-  .mx-itself .col-xs-1, .mx-itself .col-xs-2, .mx-itself .col-xs-3, .mx-itself .col-xs-4, .mx-itself .col-xs-5, .mx-itself .col-xs-6, .mx-itself .col-xs-7, .mx-itself .col-xs-8, .mx-itself .col-xs-9, .mx-itself .col-xs-10, .mx-itself .col-xs-11, .mx-itself .col-xs-12 {
+    min-height: 1px; }
+  .mx-itself .mx-col-xs-1, .mx-itself .mx-col-xs-2, .mx-itself .mx-col-xs-3, .mx-itself .mx-col-xs-4, .mx-itself .mx-col-xs-5, .mx-itself .mx-col-xs-6, .mx-itself .mx-col-xs-7, .mx-itself .mx-col-xs-8, .mx-itself .mx-col-xs-9, .mx-itself .mx-col-xs-10, .mx-itself .mx-col-xs-11, .mx-itself .mx-col-xs-12 {
     float: left; }
-  .mx-itself .col-xs-12 {
+  .mx-itself .mx-col-xs-12 {
     width: 100%; }
-  .mx-itself .col-xs-11 {
+  .mx-itself .mx-col-xs-11 {
     width: 91.66666667%; }
-  .mx-itself .col-xs-10 {
+  .mx-itself .mx-col-xs-10 {
     width: 83.33333333%; }
-  .mx-itself .col-xs-9 {
+  .mx-itself .mx-col-xs-9 {
     width: 75%; }
-  .mx-itself .col-xs-8 {
+  .mx-itself .mx-col-xs-8 {
     width: 66.66666667%; }
-  .mx-itself .col-xs-7 {
+  .mx-itself .mx-col-xs-7 {
     width: 58.33333333%; }
-  .mx-itself .col-xs-6 {
+  .mx-itself .mx-col-xs-6 {
     width: 50%; }
-  .mx-itself .col-xs-5 {
+  .mx-itself .mx-col-xs-5 {
     width: 41.66666667%; }
-  .mx-itself .col-xs-4 {
+  .mx-itself .mx-col-xs-4 {
     width: 33.33333333%; }
-  .mx-itself .col-xs-3 {
+  .mx-itself .mx-col-xs-3 {
     width: 25%; }
-  .mx-itself .col-xs-2 {
+  .mx-itself .mx-col-xs-2 {
     width: 16.66666667%; }
-  .mx-itself .col-xs-1 {
+  .mx-itself .mx-col-xs-1 {
     width: 8.33333333%; }
   .mx-itself .container {
     margin-right: auto;
     margin-left: auto; }
-  .mx-itself .row:before,
-  .mx-itself .row:after {
+  .mx-itself .mx-row:before,
+  .mx-itself .mx-row:after {
     display: table;
     content: " "; }
-  .mx-itself .row:after {
+  .mx-itself .mx-row:after {
     clear: both; }
-  .mx-itself .center-block {
+  .mx-itself .mx-center-block {
     display: block;
     margin-right: auto;
     margin-left: auto; }
-  .mx-itself .pull-right {
+  .mx-itself .mx-pull-right {
     float: right !important; }
-  .mx-itself .pull-left {
+  .mx-itself .mx-pull-left {
     float: left !important; }
-  .mx-itself .text-left {
-    text-align: left; }
-  .mx-itself .text-right {
-    text-align: right; }
-  .mx-itself .text-center {
-    text-align: center; }
-  .mx-itself .row {
-    margin-right: 0;
-    margin-left: 0; }
-  .mx-itself .col-lg-1, .mx-itself .col-lg-10, .mx-itself .col-lg-11, .mx-itself .col-lg-12, .mx-itself .col-lg-2, .mx-itself .col-lg-3, .mx-itself .col-lg-4, .mx-itself .col-lg-5, .mx-itself .col-lg-6, .mx-itself .col-lg-7, .mx-itself .col-lg-8, .mx-itself .col-lg-9, .mx-itself .col-md-1, .mx-itself .col-md-10, .mx-itself .col-md-11, .mx-itself .col-md-12, .mx-itself .col-md-2, .mx-itself .col-md-3, .mx-itself .col-md-4, .mx-itself .col-md-5, .mx-itself .col-md-6, .mx-itself .col-md-7, .mx-itself .col-md-8, .mx-itself .col-md-9, .mx-itself .col-sm-1, .mx-itself .col-sm-10, .mx-itself .col-sm-11, .mx-itself .col-sm-12, .mx-itself .col-sm-2, .mx-itself .col-sm-3, .mx-itself .col-sm-4, .mx-itself .col-sm-5, .mx-itself .col-sm-6, .mx-itself .col-sm-7, .mx-itself .col-sm-8, .mx-itself .col-sm-9, .mx-itself .col-xs-1, .mx-itself .col-xs-10, .mx-itself .col-xs-11, .mx-itself .col-xs-12, .mx-itself .col-xs-2, .mx-itself .col-xs-3, .mx-itself .col-xs-4, .mx-itself .col-xs-5, .mx-itself .col-xs-6, .mx-itself .col-xs-7, .mx-itself .col-xs-8, .mx-itself .col-xs-9 {
-    padding-right: 0;
-    padding-left: 0; }
 
 .extension-mx-tab, .mx-contacts-wrapper, .mx-keypad-wrapper, .mx-recents-wrapper, .mx-incoming-call-wrapper {
   position: absolute;
